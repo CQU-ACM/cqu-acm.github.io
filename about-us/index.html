@@ -348,7 +348,9 @@
   <span class="with-love">
     <i class="fa fa-heart"></i>
   </span>
-  <span class="author" itemprop="copyrightHolder">CQU-ACMers</span>
+  <span class="author" itemprop="copyrightHolder">
+  <a href = "https://github.com/CQU-ACM/cqu-acm.github.io"> CQU-ACMers </a>
+  </span>
 </div>
 
 <div class="powered-by">
@@ -361,6 +363,15 @@
     NexT.Mist
   </a>
 </div>
+
+<!-- 为超链接加上target='_blank'属性 -->
+<script type="text/javascript">
+	$(document).ready(function() {
+		$('a[href^="http"]').each(function() {
+		$(this).attr('target', '_blank');
+	});
+});
+</script>
 
         
 
