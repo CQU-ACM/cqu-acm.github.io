@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>CQU-ACMers</title>
+  <subtitle>Monthly Problem</subtitle>
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="cqu-acm.github.io/"/>
+  <updated>2016-04-11T17:25:44.917Z</updated>
+  <id>cqu-acm.github.io/</id>
+  
+  <author>
+    <name>CQU-ACMers</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Hello World</title>
+    <link href="cqu-acm.github.io/2016/04/12/Hello%20World/"/>
+    <id>cqu-acm.github.io/2016/04/12/Hello World/</id>
+    <published>2016-04-11T16:27:42.000Z</published>
+    <updated>2016-04-11T17:25:44.917Z</updated>
+    
+    <content type="html">&lt;p&gt;&lt;del&gt;Updating&lt;/del&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;啦啦啦啦 每周一题搭建好了&lt;/strong&gt;&lt;/p&gt;
+&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
+&lt;h2 id=&quot;这是公式&quot;&gt;&lt;a href=&quot;#这是公式&quot; class=&quot;headerlink&quot; title=&quot;这是公式&quot;&gt;&lt;/a&gt;这是公式&lt;/h2&gt;&lt;blockquote&gt;
+&lt;p&gt;$\sum_{i=1}^{n}\sum_{i=1}^{m}s_i \times s_j$&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&quot;这是代码&quot;&gt;&lt;a href=&quot;#这是代码&quot; class=&quot;headerlink&quot; title=&quot;这是代码&quot;&gt;&lt;/a&gt;这是代码&lt;/h2&gt;&lt;figure class=&quot;highlight cpp&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;meta&quot;&gt;#&lt;span class=&quot;meta-keyword&quot;&gt;include&lt;/span&gt; &lt;span class=&quot;meta-string&quot;&gt;&amp;lt;cstdio&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;params&quot;&gt;()&lt;/span&gt;&lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;built_in&quot;&gt;puts&lt;/span&gt;(&lt;span class=&quot;string&quot;&gt;&quot;Hello World&quot;&lt;/span&gt;);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    return &lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;del&gt;Updating&lt;/del&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;啦啦啦啦 每周一题搭建好了&lt;/strong&gt;&lt;/p&gt;
+    
+    </summary>
+    
+    
+  </entry>
+  
+</feed>
