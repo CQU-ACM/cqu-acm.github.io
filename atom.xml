@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="cqu-acm.github.io/"/>
-  <updated>2016-04-11T18:24:58.432Z</updated>
+  <updated>2016-04-19T18:40:47.940Z</updated>
   <id>cqu-acm.github.io/</id>
   
   <author>
@@ -14,6 +14,56 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>binary search and two pointers</title>
+    <link href="cqu-acm.github.io/2016/04/20/binary%20search%20and%20two%20pointers/"/>
+    <id>cqu-acm.github.io/2016/04/20/binary search and two pointers/</id>
+    <published>2016-04-19T18:28:42.000Z</published>
+    <updated>2016-04-19T18:40:47.940Z</updated>
+    
+    <content type="html">&lt;h1 id=&quot;讲稿上传&quot;&gt;&lt;a href=&quot;#讲稿上传&quot; class=&quot;headerlink&quot; title=&quot;讲稿上传&quot;&gt;&lt;/a&gt;讲稿上传&lt;/h1&gt;&lt;p&gt;&lt;a href=&quot;https://www.zybuluo.com/TaoSama/note/347267&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;屠龙宝刀，点击获取&lt;/a&gt;&lt;/p&gt;
+&lt;h1 id=&quot;同步录制视频上传&quot;&gt;&lt;a href=&quot;#同步录制视频上传&quot; class=&quot;headerlink&quot; title=&quot;同步录制视频上传&quot;&gt;&lt;/a&gt;同步录制视频上传&lt;/h1&gt;&lt;p&gt;&lt;a href=&quot;http://www.bilibili.com/video/av4388056/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;屠龙宝刀，点击获取&lt;/a&gt;&lt;/p&gt;
+&lt;h1 id=&quot;样例题目&quot;&gt;&lt;a href=&quot;#样例题目&quot; class=&quot;headerlink&quot; title=&quot;样例题目&quot;&gt;&lt;/a&gt;样例题目&lt;/h1&gt;&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&quot;http://codeforces.com/contest/660/problem/C&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Educational Codeforces Round 11 C. Hard Process&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;http://taosama.github.io/2016/04/10/Educational%20Codeforces%20Round%2011%20C.%20Hard%20Process%EF%BC%88two%20pointers%EF%BC%89/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;代码&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&quot;http://acm.hdu.edu.cn/showproblem.php?pid=5288&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;HDU 5289 Assignment&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;http://taosama.github.io/2016/04/12/HDU%205289%20Assignment%EF%BC%88two%20pointers%EF%BC%89/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;代码&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;ul&gt;
+&lt;li&gt;嘛，下面是惊喜，一定要点开辣！&lt;/li&gt;
+&lt;/ul&gt;
+&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
+&lt;h1 id=&quot;binary-search专题&quot;&gt;&lt;a href=&quot;#binary-search专题&quot; class=&quot;headerlink&quot; title=&quot;binary search专题&quot;&gt;&lt;/a&gt;binary search专题&lt;/h1&gt;&lt;p&gt;&lt;a href=&quot;http://acm.hust.edu.cn/vjudge/contest/view.action?cid=73550#overview&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;屠龙宝刀，点击就送&lt;/a&gt;&lt;/p&gt;
+&lt;h1 id=&quot;two-pointers专题&quot;&gt;&lt;a href=&quot;#two-pointers专题&quot; class=&quot;headerlink&quot; title=&quot;two pointers专题&quot;&gt;&lt;/a&gt;two pointers专题&lt;/h1&gt;&lt;p&gt;&lt;a href=&quot;http://acm.hust.edu.cn/vjudge/contest/view.action?cid=73551#overview&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;屠龙宝刀，点击就送&lt;/a&gt;&lt;/p&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;讲稿上传&quot;&gt;&lt;a href=&quot;#讲稿上传&quot; class=&quot;headerlink&quot; title=&quot;讲稿上传&quot;&gt;&lt;/a&gt;讲稿上传&lt;/h1&gt;&lt;p&gt;&lt;a href=&quot;https://www.zybuluo.com/TaoSama/note/347267&quot;&gt;屠龙宝刀，点击获取&lt;/a&gt;&lt;/p&gt;
+&lt;h1 id=&quot;同步录制视频上传&quot;&gt;&lt;a href=&quot;#同步录制视频上传&quot; class=&quot;headerlink&quot; title=&quot;同步录制视频上传&quot;&gt;&lt;/a&gt;同步录制视频上传&lt;/h1&gt;&lt;p&gt;&lt;a href=&quot;http://www.bilibili.com/video/av4388056/&quot;&gt;屠龙宝刀，点击获取&lt;/a&gt;&lt;/p&gt;
+&lt;h1 id=&quot;样例题目&quot;&gt;&lt;a href=&quot;#样例题目&quot; class=&quot;headerlink&quot; title=&quot;样例题目&quot;&gt;&lt;/a&gt;样例题目&lt;/h1&gt;&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&quot;http://codeforces.com/contest/660/problem/C&quot;&gt;Educational Codeforces Round 11 C. Hard Process&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;http://taosama.github.io/2016/04/10/Educational%20Codeforces%20Round%2011%20C.%20Hard%20Process%EF%BC%88two%20pointers%EF%BC%89/&quot;&gt;代码&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&quot;http://acm.hdu.edu.cn/showproblem.php?pid=5288&quot;&gt;HDU 5289 Assignment&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;http://taosama.github.io/2016/04/12/HDU%205289%20Assignment%EF%BC%88two%20pointers%EF%BC%89/&quot;&gt;代码&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;ul&gt;
+&lt;li&gt;嘛，下面是惊喜，一定要点开辣！&lt;/li&gt;
+&lt;/ul&gt;
+    
+    </summary>
+    
+      <category term="TaoSama" scheme="cqu-acm.github.io/categories/TaoSama/"/>
+    
+    
+      <category term="binary search" scheme="cqu-acm.github.io/tags/binary-search/"/>
+    
+      <category term="two pointers" scheme="cqu-acm.github.io/tags/two-pointers/"/>
+    
+  </entry>
   
   <entry>
     <title>Hello World</title>
