@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="cqu-acm.github.io/"/>
-  <updated>2016-04-19T19:02:03.965Z</updated>
+  <updated>2016-04-21T19:17:47.948Z</updated>
   <id>cqu-acm.github.io/</id>
   
   <author>
@@ -14,6 +14,70 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>2016年重庆大学ACM-ICPC暑假前集训计划及暑假集训队选拔方案</title>
+    <link href="cqu-acm.github.io/2016/04/22/2016%E5%B9%B4%E9%87%8D%E5%BA%86%E5%A4%A7%E5%AD%A6ACM-ICPC%E6%9A%91%E5%81%87%E5%89%8D%E9%9B%86%E8%AE%AD%E8%AE%A1%E5%88%92%E5%8F%8A%E6%9A%91%E5%81%87%E9%9B%86%E8%AE%AD%E9%98%9F%E9%80%89%E6%8B%94%E6%96%B9%E6%A1%88/"/>
+    <id>cqu-acm.github.io/2016/04/22/2016年重庆大学ACM-ICPC暑假前集训计划及暑假集训队选拔方案/</id>
+    <published>2016-04-21T18:28:42.000Z</published>
+    <updated>2016-04-21T19:17:47.948Z</updated>
+    
+    <content type="html">&lt;h1 id=&quot;暑假前集训开始辣&quot;&gt;&lt;a href=&quot;#暑假前集训开始辣&quot; class=&quot;headerlink&quot; title=&quot;暑假前集训开始辣&quot;&gt;&lt;/a&gt;暑假前集训开始辣&lt;/h1&gt;&lt;p&gt;任何疑问欢迎加入CQU-ACM-ICPC编程俱乐部QQ群118778071提问！&lt;/p&gt;
+&lt;h1 id=&quot;参与方式&quot;&gt;&lt;a href=&quot;#参与方式&quot; class=&quot;headerlink&quot; title=&quot;参与方式&quot;&gt;&lt;/a&gt;参与方式&lt;/h1&gt;&lt;ol&gt;
+&lt;li&gt;还没有注册CQUOJ帐号的同学，请尽快注册&lt;/li&gt;
+&lt;li&gt;登录帐号后，请将昵称改成自己的真实姓名（必须改名）&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h1 id=&quot;暑假前集训日程安排&quot;&gt;&lt;a href=&quot;#暑假前集训日程安排&quot; class=&quot;headerlink&quot; title=&quot;暑假前集训日程安排&quot;&gt;&lt;/a&gt;暑假前集训日程安排&lt;/h1&gt;&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
+&lt;p&gt;（暂定如下）&lt;br&gt;&lt;img src=&quot;http://7xru22.com1.z0.glb.clouddn.com/16-4-22/35319887.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;h1 id=&quot;暑假前集训选拔标准&quot;&gt;&lt;a href=&quot;#暑假前集训选拔标准&quot; class=&quot;headerlink&quot; title=&quot;暑假前集训选拔标准&quot;&gt;&lt;/a&gt;暑假前集训选拔标准&lt;/h1&gt;&lt;h2 id=&quot;暑假前集训分数由以下几部分组成：&quot;&gt;&lt;a href=&quot;#暑假前集训分数由以下几部分组成：&quot; class=&quot;headerlink&quot; title=&quot;暑假前集训分数由以下几部分组成：&quot;&gt;&lt;/a&gt;暑假前集训分数由以下几部分组成：&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;Topcoder、Codeforces加分&lt;/li&gt;
+&lt;li&gt;校赛加分&lt;/li&gt;
+&lt;li&gt;专题讲座考勤加分&lt;/li&gt;
+&lt;li&gt;专题讲座作业加分&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;具体记分方式&quot;&gt;&lt;a href=&quot;#具体记分方式&quot; class=&quot;headerlink&quot; title=&quot;具体记分方式&quot;&gt;&lt;/a&gt;具体记分方式&lt;/h2&gt;&lt;ol&gt;
+&lt;li&gt;(选)Topcoder&lt;br&gt;首先要求至少参加$3$场比赛，并且以第三高$rating$作为依据。记第三高$rating=r$&lt;br&gt;则得分为$\max(0, \frac{r-900}{80})^2$，其中除法为整除&lt;/li&gt;
+&lt;li&gt;(选)Codeforces&lt;br&gt;首先要求至少参加$3$场比赛，并且以第三高$rating$作为依据。记第三高$rating=r$&lt;br&gt;则得分为$\max(0, \frac{r-1200}{80})^2$，其中除法为整除&lt;/li&gt;
+&lt;li&gt;校赛加分&lt;ul&gt;
+&lt;li&gt;特等奖：$20$分&lt;/li&gt;
+&lt;li&gt;一等奖：$12$分&lt;/li&gt;
+&lt;li&gt;二等奖：$8$分&lt;/li&gt;
+&lt;li&gt;三等奖：$5$分&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;专题讲座考勤&lt;br&gt;每个专题有两场讲座，每场记$2$分！&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;专题讲座作业&lt;br&gt;每个专题将会布置$10\sim 14$道左右的作业供大家课后完成，完成后要交解题报告(电子版)。&lt;br&gt;各专题负责人将根据大家的完成情况打分。每个专题满分$8$分。&lt;/p&gt;
+ &lt;font color=&quot;red&quot;&gt;每个人的最终得分等于以上$5$部分分数之和乘以系数$k$（大一$1.5$，大二$1.25$，大三及以上$1.0$）&lt;/font&gt;
+
+
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&quot;现役集训队队员同样将参与排名，记分方式稍有不同，具体如下：&quot;&gt;&lt;a href=&quot;#现役集训队队员同样将参与排名，记分方式稍有不同，具体如下：&quot; class=&quot;headerlink&quot; title=&quot;现役集训队队员同样将参与排名，记分方式稍有不同，具体如下：&quot;&gt;&lt;/a&gt;现役集训队队员同样将参与排名，记分方式稍有不同，具体如下：&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;Topcoder和Codeforces基准线分别为$1200$和$1700$&lt;/li&gt;
+&lt;li&gt;不计考勤分&lt;/li&gt;
+&lt;li&gt;负责专题讲座的队员该专题记满分，其他队员照常&lt;/li&gt;
+&lt;li&gt;集训队队员无论大几，系数$k$均按照$1.0$计算&lt;/li&gt;
+&lt;li&gt;除以上四点不同之外，其余均与新人相同&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;暑假前集训开始辣&quot;&gt;&lt;a href=&quot;#暑假前集训开始辣&quot; class=&quot;headerlink&quot; title=&quot;暑假前集训开始辣&quot;&gt;&lt;/a&gt;暑假前集训开始辣&lt;/h1&gt;&lt;p&gt;任何疑问欢迎加入CQU-ACM-ICPC编程俱乐部QQ群118778071提问！&lt;/p&gt;
+&lt;h1 id=&quot;参与方式&quot;&gt;&lt;a href=&quot;#参与方式&quot; class=&quot;headerlink&quot; title=&quot;参与方式&quot;&gt;&lt;/a&gt;参与方式&lt;/h1&gt;&lt;ol&gt;
+&lt;li&gt;还没有注册CQUOJ帐号的同学，请尽快注册&lt;/li&gt;
+&lt;li&gt;登录帐号后，请将昵称改成自己的真实姓名（必须改名）&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h1 id=&quot;暑假前集训日程安排&quot;&gt;&lt;a href=&quot;#暑假前集训日程安排&quot; class=&quot;headerlink&quot; title=&quot;暑假前集训日程安排&quot;&gt;&lt;/a&gt;暑假前集训日程安排&lt;/h1&gt;
+    
+    </summary>
+    
+      <category term="Anouncement" scheme="cqu-acm.github.io/categories/Anouncement/"/>
+    
+    
+      <category term="2016" scheme="cqu-acm.github.io/tags/2016/"/>
+    
+  </entry>
   
   <entry>
     <title>Binary Search and Two Pointers</title>
