@@ -4,9 +4,9 @@
   <subtitle>Monthly Problem</subtitle>
   <link href="/blog/atom.xml" rel="self"/>
   
-  <link href="cqu-acm.github.io/"/>
+  <link href="cqu-acm.github.io/blog/"/>
   <updated>2016-04-22T05:12:26.482Z</updated>
-  <id>cqu-acm.github.io/</id>
+  <id>cqu-acm.github.io/blog/</id>
   
   <author>
     <name>CQU-ACMers</name>
@@ -17,8 +17,8 @@
   
   <entry>
     <title>2016年重庆大学ACM-ICPC暑假前集训计划及暑假集训队选拔方案</title>
-    <link href="cqu-acm.github.io/2016/04/22/2016%E5%B9%B4%E9%87%8D%E5%BA%86%E5%A4%A7%E5%AD%A6ACM-ICPC%E6%9A%91%E5%81%87%E5%89%8D%E9%9B%86%E8%AE%AD%E8%AE%A1%E5%88%92%E5%8F%8A%E6%9A%91%E5%81%87%E9%9B%86%E8%AE%AD%E9%98%9F%E9%80%89%E6%8B%94%E6%96%B9%E6%A1%88/"/>
-    <id>cqu-acm.github.io/2016/04/22/2016年重庆大学ACM-ICPC暑假前集训计划及暑假集训队选拔方案/</id>
+    <link href="cqu-acm.github.io/blog/2016/04/22/2016%E5%B9%B4%E9%87%8D%E5%BA%86%E5%A4%A7%E5%AD%A6ACM-ICPC%E6%9A%91%E5%81%87%E5%89%8D%E9%9B%86%E8%AE%AD%E8%AE%A1%E5%88%92%E5%8F%8A%E6%9A%91%E5%81%87%E9%9B%86%E8%AE%AD%E9%98%9F%E9%80%89%E6%8B%94%E6%96%B9%E6%A1%88/"/>
+    <id>cqu-acm.github.io/blog/2016/04/22/2016年重庆大学ACM-ICPC暑假前集训计划及暑假集训队选拔方案/</id>
     <published>2016-04-21T18:28:42.000Z</published>
     <updated>2016-04-22T05:12:26.482Z</updated>
     
@@ -72,17 +72,17 @@
     
     </summary>
     
-      <category term="Anouncement" scheme="cqu-acm.github.io/categories/Anouncement/"/>
+      <category term="Anouncement" scheme="cqu-acm.github.io/blog/categories/Anouncement/"/>
     
     
-      <category term="2016" scheme="cqu-acm.github.io/tags/2016/"/>
+      <category term="2016" scheme="cqu-acm.github.io/blog/tags/2016/"/>
     
   </entry>
   
   <entry>
     <title>Binary Search and Two Pointers</title>
-    <link href="cqu-acm.github.io/2016/04/20/binary%20search%20and%20two%20pointers/"/>
-    <id>cqu-acm.github.io/2016/04/20/binary search and two pointers/</id>
+    <link href="cqu-acm.github.io/blog/2016/04/20/binary%20search%20and%20two%20pointers/"/>
+    <id>cqu-acm.github.io/blog/2016/04/20/binary search and two pointers/</id>
     <published>2016-04-19T18:28:42.000Z</published>
     <updated>2016-04-19T19:02:03.965Z</updated>
     
@@ -120,19 +120,19 @@
     
     </summary>
     
-      <category term="TaoSama" scheme="cqu-acm.github.io/categories/TaoSama/"/>
+      <category term="TaoSama" scheme="cqu-acm.github.io/blog/categories/TaoSama/"/>
     
     
-      <category term="binary search" scheme="cqu-acm.github.io/tags/binary-search/"/>
+      <category term="binary search" scheme="cqu-acm.github.io/blog/tags/binary-search/"/>
     
-      <category term="two pointers" scheme="cqu-acm.github.io/tags/two-pointers/"/>
+      <category term="two pointers" scheme="cqu-acm.github.io/blog/tags/two-pointers/"/>
     
   </entry>
   
   <entry>
     <title>Hello World</title>
-    <link href="cqu-acm.github.io/2016/04/12/Hello%20World/"/>
-    <id>cqu-acm.github.io/2016/04/12/Hello World/</id>
+    <link href="cqu-acm.github.io/blog/2016/04/12/Hello%20World/"/>
+    <id>cqu-acm.github.io/blog/2016/04/12/Hello World/</id>
     <published>2016-04-11T16:27:42.000Z</published>
     <updated>2016-04-11T18:24:58.432Z</updated>
     
