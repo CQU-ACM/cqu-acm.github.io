@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>CQU-ACMers</title>
+  <subtitle>Monthly Problem</subtitle>
+  <link href="/blog/atom.xml" rel="self"/>
+  
+  <link href="cqu-acm.github.io/blog/"/>
+  <updated>2016-04-22T05:12:26.482Z</updated>
+  <id>cqu-acm.github.io/blog/</id>
+  
+  <author>
+    <name>CQU-ACMers</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>2016年重庆大学ACM-ICPC暑假前集训计划及暑假集训队选拔方案</title>
+    <link href="cqu-acm.github.io/blog/2016/04/22/2016%E5%B9%B4%E9%87%8D%E5%BA%86%E5%A4%A7%E5%AD%A6ACM-ICPC%E6%9A%91%E5%81%87%E5%89%8D%E9%9B%86%E8%AE%AD%E8%AE%A1%E5%88%92%E5%8F%8A%E6%9A%91%E5%81%87%E9%9B%86%E8%AE%AD%E9%98%9F%E9%80%89%E6%8B%94%E6%96%B9%E6%A1%88/"/>
+    <id>cqu-acm.github.io/blog/2016/04/22/2016年重庆大学ACM-ICPC暑假前集训计划及暑假集训队选拔方案/</id>
+    <published>2016-04-21T18:28:42.000Z</published>
+    <updated>2016-04-22T05:12:26.482Z</updated>
+    
+    <content type="html">&lt;h1 id=&quot;暑假前集训开始辣&quot;&gt;&lt;a href=&quot;#暑假前集训开始辣&quot; class=&quot;headerlink&quot; title=&quot;暑假前集训开始辣&quot;&gt;&lt;/a&gt;暑假前集训开始辣&lt;/h1&gt;&lt;p&gt;任何疑问欢迎加入CQU-ACM-ICPC编程俱乐部QQ群118778071提问！&lt;/p&gt;
+&lt;h1 id=&quot;参与方式&quot;&gt;&lt;a href=&quot;#参与方式&quot; class=&quot;headerlink&quot; title=&quot;参与方式&quot;&gt;&lt;/a&gt;参与方式&lt;/h1&gt;&lt;ol&gt;
+&lt;li&gt;还没有注册CQUOJ帐号的同学，请尽快注册&lt;/li&gt;
+&lt;li&gt;登录帐号后，请将昵称改成自己的真实姓名（必须改名）&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h1 id=&quot;暑假前集训日程安排&quot;&gt;&lt;a href=&quot;#暑假前集训日程安排&quot; class=&quot;headerlink&quot; title=&quot;暑假前集训日程安排&quot;&gt;&lt;/a&gt;暑假前集训日程安排&lt;/h1&gt;&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
+&lt;p&gt;（暂定如下）&lt;br&gt;&lt;img src=&quot;http://7xru22.com1.z0.glb.clouddn.com/16-4-22/68334136.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;h1 id=&quot;暑假前集训选拔标准&quot;&gt;&lt;a href=&quot;#暑假前集训选拔标准&quot; class=&quot;headerlink&quot; title=&quot;暑假前集训选拔标准&quot;&gt;&lt;/a&gt;暑假前集训选拔标准&lt;/h1&gt;&lt;h2 id=&quot;暑假前集训分数由以下几部分组成：&quot;&gt;&lt;a href=&quot;#暑假前集训分数由以下几部分组成：&quot; class=&quot;headerlink&quot; title=&quot;暑假前集训分数由以下几部分组成：&quot;&gt;&lt;/a&gt;暑假前集训分数由以下几部分组成：&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;Topcoder、Codeforces加分&lt;/li&gt;
+&lt;li&gt;校赛加分&lt;/li&gt;
+&lt;li&gt;专题讲座考勤加分&lt;/li&gt;
+&lt;li&gt;专题讲座作业加分&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;具体记分方式&quot;&gt;&lt;a href=&quot;#具体记分方式&quot; class=&quot;headerlink&quot; title=&quot;具体记分方式&quot;&gt;&lt;/a&gt;具体记分方式&lt;/h2&gt;&lt;ol&gt;
+&lt;li&gt;(选)Topcoder&lt;br&gt;首先要求至少参加$3$场比赛，并且以第三高$rating$作为依据。记第三高$rating=r$&lt;br&gt;则得分为$\max(0, \frac{r-900}{80})^2$，其中除法为整除&lt;/li&gt;
+&lt;li&gt;(选)Codeforces&lt;br&gt;首先要求至少参加$3$场比赛，并且以第三高$rating$作为依据。记第三高$rating=r$&lt;br&gt;则得分为$\max(0, \frac{r-1200}{80})^2$，其中除法为整除&lt;/li&gt;
+&lt;li&gt;校赛加分&lt;ul&gt;
+&lt;li&gt;特等奖：$20$分&lt;/li&gt;
+&lt;li&gt;一等奖：$12$分&lt;/li&gt;
+&lt;li&gt;二等奖：$8$分&lt;/li&gt;
+&lt;li&gt;三等奖：$5$分&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;专题讲座考勤&lt;br&gt;每个专题有两场讲座，每场记$2$分！&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;专题讲座作业&lt;br&gt;每个专题将会布置$10\sim 14$道左右的作业供大家课后完成，完成后要交解题报告(电子版)。&lt;br&gt;各专题负责人将根据大家的完成情况打分。每个专题满分$8$分。&lt;/p&gt;
+ &lt;font color=&quot;red&quot;&gt;每个人的最终得分等于以上$5$部分分数之和乘以系数$k$（大一$1.5$，大二$1.25$，大三及以上$1.0$）&lt;/font&gt;
+
+
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&quot;现役集训队队员同样将参与排名，记分方式稍有不同，具体如下：&quot;&gt;&lt;a href=&quot;#现役集训队队员同样将参与排名，记分方式稍有不同，具体如下：&quot; class=&quot;headerlink&quot; title=&quot;现役集训队队员同样将参与排名，记分方式稍有不同，具体如下：&quot;&gt;&lt;/a&gt;现役集训队队员同样将参与排名，记分方式稍有不同，具体如下：&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;Topcoder和Codeforces基准线分别为$1200$和$1700$&lt;/li&gt;
+&lt;li&gt;不计考勤分&lt;/li&gt;
+&lt;li&gt;负责专题讲座的队员该专题记满分，其他队员照常&lt;/li&gt;
+&lt;li&gt;集训队队员无论大几，系数$k$均按照$1.0$计算&lt;/li&gt;
+&lt;li&gt;除以上四点不同之外，其余均与新人相同&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;暑假前集训开始辣&quot;&gt;&lt;a href=&quot;#暑假前集训开始辣&quot; class=&quot;headerlink&quot; title=&quot;暑假前集训开始辣&quot;&gt;&lt;/a&gt;暑假前集训开始辣&lt;/h1&gt;&lt;p&gt;任何疑问欢迎加入CQU-ACM-ICPC编程俱乐部QQ群118778071提问！&lt;/p&gt;
+&lt;h1 id=&quot;参与方式&quot;&gt;&lt;a href=&quot;#参与方式&quot; class=&quot;headerlink&quot; title=&quot;参与方式&quot;&gt;&lt;/a&gt;参与方式&lt;/h1&gt;&lt;ol&gt;
+&lt;li&gt;还没有注册CQUOJ帐号的同学，请尽快注册&lt;/li&gt;
+&lt;li&gt;登录帐号后，请将昵称改成自己的真实姓名（必须改名）&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h1 id=&quot;暑假前集训日程安排&quot;&gt;&lt;a href=&quot;#暑假前集训日程安排&quot; class=&quot;headerlink&quot; title=&quot;暑假前集训日程安排&quot;&gt;&lt;/a&gt;暑假前集训日程安排&lt;/h1&gt;
+    
+    </summary>
+    
+      <category term="Anouncement" scheme="cqu-acm.github.io/blog/categories/Anouncement/"/>
+    
+    
+      <category term="2016" scheme="cqu-acm.github.io/blog/tags/2016/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Binary Search and Two Pointers</title>
+    <link href="cqu-acm.github.io/blog/2016/04/20/binary%20search%20and%20two%20pointers/"/>
+    <id>cqu-acm.github.io/blog/2016/04/20/binary search and two pointers/</id>
+    <published>2016-04-19T18:28:42.000Z</published>
+    <updated>2016-04-19T19:02:03.965Z</updated>
+    
+    <content type="html">&lt;h1 id=&quot;讲稿上传&quot;&gt;&lt;a href=&quot;#讲稿上传&quot; class=&quot;headerlink&quot; title=&quot;讲稿上传&quot;&gt;&lt;/a&gt;讲稿上传&lt;/h1&gt;&lt;p&gt;&lt;a href=&quot;https://www.zybuluo.com/TaoSama/note/347267&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;屠龙宝刀，点击获取&lt;/a&gt;&lt;/p&gt;
+&lt;h1 id=&quot;同步录制视频上传&quot;&gt;&lt;a href=&quot;#同步录制视频上传&quot; class=&quot;headerlink&quot; title=&quot;同步录制视频上传&quot;&gt;&lt;/a&gt;同步录制视频上传&lt;/h1&gt;&lt;p&gt;&lt;a href=&quot;http://www.bilibili.com/video/av4388056/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;屠龙宝刀，点击获取&lt;/a&gt;&lt;/p&gt;
+&lt;h1 id=&quot;样例题目&quot;&gt;&lt;a href=&quot;#样例题目&quot; class=&quot;headerlink&quot; title=&quot;样例题目&quot;&gt;&lt;/a&gt;样例题目&lt;/h1&gt;&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&quot;http://codeforces.com/contest/660/problem/C&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Educational Codeforces Round 11 C. Hard Process&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;http://taosama.github.io/2016/04/10/Educational%20Codeforces%20Round%2011%20C.%20Hard%20Process%EF%BC%88two%20pointers%EF%BC%89/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;代码&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&quot;http://acm.hdu.edu.cn/showproblem.php?pid=5288&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;HDU 5289 Assignment&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;http://taosama.github.io/2016/04/12/HDU%205289%20Assignment%EF%BC%88two%20pointers%EF%BC%89/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;代码&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;ul&gt;
+&lt;li&gt;嘛，下面是惊喜，一定要点开辣！&lt;/li&gt;
+&lt;/ul&gt;
+&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
+&lt;h1 id=&quot;binary-search专题&quot;&gt;&lt;a href=&quot;#binary-search专题&quot; class=&quot;headerlink&quot; title=&quot;binary search专题&quot;&gt;&lt;/a&gt;binary search专题&lt;/h1&gt;&lt;p&gt;&lt;a href=&quot;http://acm.hust.edu.cn/vjudge/contest/view.action?cid=73550#overview&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;屠龙宝刀，点击就送&lt;/a&gt;&lt;/p&gt;
+&lt;h1 id=&quot;two-pointers专题&quot;&gt;&lt;a href=&quot;#two-pointers专题&quot; class=&quot;headerlink&quot; title=&quot;two pointers专题&quot;&gt;&lt;/a&gt;two pointers专题&lt;/h1&gt;&lt;p&gt;&lt;a href=&quot;http://acm.hust.edu.cn/vjudge/contest/view.action?cid=73551#overview&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;屠龙宝刀，点击就送&lt;/a&gt;&lt;/p&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;讲稿上传&quot;&gt;&lt;a href=&quot;#讲稿上传&quot; class=&quot;headerlink&quot; title=&quot;讲稿上传&quot;&gt;&lt;/a&gt;讲稿上传&lt;/h1&gt;&lt;p&gt;&lt;a href=&quot;https://www.zybuluo.com/TaoSama/note/347267&quot;&gt;屠龙宝刀，点击获取&lt;/a&gt;&lt;/p&gt;
+&lt;h1 id=&quot;同步录制视频上传&quot;&gt;&lt;a href=&quot;#同步录制视频上传&quot; class=&quot;headerlink&quot; title=&quot;同步录制视频上传&quot;&gt;&lt;/a&gt;同步录制视频上传&lt;/h1&gt;&lt;p&gt;&lt;a href=&quot;http://www.bilibili.com/video/av4388056/&quot;&gt;屠龙宝刀，点击获取&lt;/a&gt;&lt;/p&gt;
+&lt;h1 id=&quot;样例题目&quot;&gt;&lt;a href=&quot;#样例题目&quot; class=&quot;headerlink&quot; title=&quot;样例题目&quot;&gt;&lt;/a&gt;样例题目&lt;/h1&gt;&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&quot;http://codeforces.com/contest/660/problem/C&quot;&gt;Educational Codeforces Round 11 C. Hard Process&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;http://taosama.github.io/2016/04/10/Educational%20Codeforces%20Round%2011%20C.%20Hard%20Process%EF%BC%88two%20pointers%EF%BC%89/&quot;&gt;代码&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&quot;http://acm.hdu.edu.cn/showproblem.php?pid=5288&quot;&gt;HDU 5289 Assignment&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;http://taosama.github.io/2016/04/12/HDU%205289%20Assignment%EF%BC%88two%20pointers%EF%BC%89/&quot;&gt;代码&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;ul&gt;
+&lt;li&gt;嘛，下面是惊喜，一定要点开辣！&lt;/li&gt;
+&lt;/ul&gt;
+    
+    </summary>
+    
+      <category term="TaoSama" scheme="cqu-acm.github.io/blog/categories/TaoSama/"/>
+    
+    
+      <category term="binary search" scheme="cqu-acm.github.io/blog/tags/binary-search/"/>
+    
+      <category term="two pointers" scheme="cqu-acm.github.io/blog/tags/two-pointers/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Hello World</title>
+    <link href="cqu-acm.github.io/blog/2016/04/12/Hello%20World/"/>
+    <id>cqu-acm.github.io/blog/2016/04/12/Hello World/</id>
+    <published>2016-04-11T16:27:42.000Z</published>
+    <updated>2016-04-11T18:24:58.432Z</updated>
+    
+    <content type="html">&lt;p&gt;&lt;del&gt;Updating&lt;/del&gt;&lt;/p&gt;
+&lt;h1 id=&quot;啦啦啦啦-每周一题搭建好了&quot;&gt;&lt;a href=&quot;#啦啦啦啦-每周一题搭建好了&quot; class=&quot;headerlink&quot; title=&quot;啦啦啦啦 每周一题搭建好了&quot;&gt;&lt;/a&gt;&lt;strong&gt;啦啦啦啦 每周一题搭建好了&lt;/strong&gt;&lt;/h1&gt;&lt;ul&gt;
+&lt;li&gt;接下来给每个人建立一个分类啊，然后写每周一题的题解咯&lt;/li&gt;
+&lt;li&gt;然后最重要的是你们都要去学习&lt;code&gt;markdown&lt;/code&gt;语法和&lt;code&gt;latex公式&lt;/code&gt;语法！&lt;/li&gt;
+&lt;li&gt;至于怎么学习自己百度&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;ul&gt;
+&lt;li&gt;嘛本校的，要友链的，下面留言辣，我会添加的~&lt;/li&gt;
+&lt;li&gt;谁想写About Us的文字私聊我啊~&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;ul&gt;
+&lt;li&gt;嘛，下面是测试不要好奇的点开辣！&lt;/li&gt;
+&lt;/ul&gt;
+&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
+&lt;h2 id=&quot;这是公式&quot;&gt;&lt;a href=&quot;#这是公式&quot; class=&quot;headerlink&quot; title=&quot;这是公式&quot;&gt;&lt;/a&gt;这是公式&lt;/h2&gt;&lt;blockquote&gt;
+&lt;p&gt;$\sum_{i=1}^{n}\sum_{i=1}^{m}s_i \times s_j$&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&quot;这是超链接&quot;&gt;&lt;a href=&quot;#这是超链接&quot; class=&quot;headerlink&quot; title=&quot;这是超链接&quot;&gt;&lt;/a&gt;这是超链接&lt;/h2&gt;&lt;p&gt;&lt;a href=&quot;http://taosama.github.io/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;屠龙宝刀，点击就送&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&quot;这是代码&quot;&gt;&lt;a href=&quot;#这是代码&quot; class=&quot;headerlink&quot; title=&quot;这是代码&quot;&gt;&lt;/a&gt;这是代码&lt;/h2&gt;&lt;figure class=&quot;highlight cpp&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;meta&quot;&gt;#&lt;span class=&quot;meta-keyword&quot;&gt;include&lt;/span&gt; &lt;span class=&quot;meta-string&quot;&gt;&amp;lt;cstdio&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;params&quot;&gt;()&lt;/span&gt;&lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;built_in&quot;&gt;puts&lt;/span&gt;(&lt;span class=&quot;string&quot;&gt;&quot;Hello World&quot;&lt;/span&gt;);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    return &lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;h2 id=&quot;据说看到这里的都是撒比&quot;&gt;&lt;a href=&quot;#据说看到这里的都是撒比&quot; class=&quot;headerlink&quot; title=&quot;据说看到这里的都是撒比&quot;&gt;&lt;/a&gt;据说看到这里的都是撒比&lt;/h2&gt;</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;del&gt;Updating&lt;/del&gt;&lt;/p&gt;
+&lt;h1 id=&quot;啦啦啦啦-每周一题搭建好了&quot;&gt;&lt;a href=&quot;#啦啦啦啦-每周一题搭建好了&quot; class=&quot;headerlink&quot; title=&quot;啦啦啦啦 每周一题搭建好了&quot;&gt;&lt;/a&gt;&lt;strong&gt;啦啦啦啦 每周一题搭建好了&lt;/strong&gt;&lt;/h1&gt;&lt;ul&gt;
+&lt;li&gt;接下来给每个人建立一个分类啊，然后写每周一题的题解咯&lt;/li&gt;
+&lt;li&gt;然后最重要的是你们都要去学习&lt;code&gt;markdown&lt;/code&gt;语法和&lt;code&gt;latex公式&lt;/code&gt;语法！&lt;/li&gt;
+&lt;li&gt;至于怎么学习自己百度&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;ul&gt;
+&lt;li&gt;嘛本校的，要友链的，下面留言辣，我会添加的~&lt;/li&gt;
+&lt;li&gt;谁想写About Us的文字私聊我啊~&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;ul&gt;
+&lt;li&gt;嘛，下面是测试不要好奇的点开辣！&lt;/li&gt;
+&lt;/ul&gt;
+    
+    </summary>
+    
+    
+  </entry>
+  
+</feed>
