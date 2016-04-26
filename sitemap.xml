@@ -2,9 +2,16 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://cqu-acm.github.io/blog/categories/index.html</loc>
+    
+    <lastmod>2016-04-26T16:35:03.606Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://cqu-acm.github.io/blog/blog/2016/04/27/%E7%BA%BF%E6%AE%B5%E6%A0%91%E5%B0%8F%E5%A7%BF%E5%8A%BF/</loc>
     
-    <lastmod>2016-04-26T16:24:25.366Z</lastmod>
+    <lastmod>2016-04-26T16:30:58.691Z</lastmod>
     
   </url>
   
@@ -33,13 +40,6 @@
     <loc>http://cqu-acm.github.io/blog/tags/index.html</loc>
     
     <lastmod>2016-04-19T18:54:25.129Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://cqu-acm.github.io/blog/categories/index.html</loc>
-    
-    <lastmod>2016-04-19T18:53:53.349Z</lastmod>
     
   </url>
   
