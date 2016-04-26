@@ -1,0 +1,757 @@
+<!doctype html>
+
+
+
+  
+
+
+<html class="theme-next mist use-motion">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+  <link href="/blog/vendors/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css"/>
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.lug.ustc.edu.cn/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+<link href="/blog/vendors/font-awesome/css/font-awesome.min.css?v=4.4.0" rel="stylesheet" type="text/css" />
+
+<link href="/blog/css/main.css?v=5.0.1" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="CQU, 重庆大学, ACM, 每周一题, Algorithm, 算法, " />
+
+
+
+
+
+  <link rel="alternate" href="/blog/atom.xml" title="CQU-ACMers" type="application/atom+xml" />
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/blog/logo.png?v=5.0.1" />
+
+
+
+
+
+
+<meta name="description" content="title: 线段树小姿势date: 2016-04-27 00:27:42categories: 
+
+LCY
+
+tags: 
+线段树
+
+Updating
+区间合并SPOJ GSS1题意
+给一个$n$长度的序列,$A[1]…A[n], ( |A[i]| ≤ 15007 , 1 ≤ N ≤ 50000 )$
+$M$个询问 询问区间内最大连续和
+
+##题解
+
+线段树每个节点维护$Lmax,Rmax,">
+<meta property="og:type" content="article">
+<meta property="og:title" content="CQU-ACMers">
+<meta property="og:url" content="http://cqu-acm.github.io/blog/2016/04/27/线段树小姿势/index.html">
+<meta property="og:site_name" content="CQU-ACMers">
+<meta property="og:description" content="title: 线段树小姿势date: 2016-04-27 00:27:42categories: 
+
+LCY
+
+tags: 
+线段树
+
+Updating
+区间合并SPOJ GSS1题意
+给一个$n$长度的序列,$A[1]…A[n], ( |A[i]| ≤ 15007 , 1 ≤ N ≤ 50000 )$
+$M$个询问 询问区间内最大连续和
+
+##题解
+
+线段树每个节点维护$Lmax,Rmax,">
+<meta property="og:updated_time" content="2016-04-26T16:24:25.366Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="CQU-ACMers">
+<meta name="twitter:description" content="title: 线段树小姿势date: 2016-04-27 00:27:42categories: 
+
+LCY
+
+tags: 
+线段树
+
+Updating
+区间合并SPOJ GSS1题意
+给一个$n$长度的序列,$A[1]…A[n], ( |A[i]| ≤ 15007 , 1 ≤ N ≤ 50000 )$
+$M$个询问 询问区间内最大连续和
+
+##题解
+
+线段树每个节点维护$Lmax,Rmax,">
+
+
+
+<script type="text/javascript" id="hexo.configuration">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    scheme: 'Mist',
+    sidebar: {"position":"left","display":"always"},
+    fancybox: true,
+    motion: true,
+    duoshuo: {
+      userId: 6259705648129246000,
+      author: 'CQU-ACMers'
+    }
+  };
+</script>
+
+  <title>  | CQU-ACMers </title>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+
+  <div class="container one-collumn sidebar-position-left page-post-detail ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-meta ">
+  
+
+  <div class="custom-logo-site-title">
+    <a href="/blog/"  class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <span class="site-title">CQU-ACMers</span>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+  </div>
+  <p class="site-subtitle">Monthly Problem</p>
+</div>
+
+<div class="site-nav-toggle">
+  <button>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+  </button>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/blog/" rel="section">
+            
+              <i class="menu-item-icon fa fa-home fa-fw"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/blog/about-us" rel="section">
+            
+              <i class="menu-item-icon fa fa-user fa-fw"></i> <br />
+            
+            关于我们
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/blog/archives" rel="section">
+            
+              <i class="menu-item-icon fa fa-archive fa-fw"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/blog/categories" rel="section">
+            
+              <i class="menu-item-icon fa fa-th fa-fw"></i> <br />
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/blog/tags" rel="section">
+            
+              <i class="menu-item-icon fa fa-tags fa-fw"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2016-04-27T00:23:24+08:00" content="2016-04-27">
+              2016-04-27
+            </time>
+          </span>
+
+          
+
+          
+            
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/blog/2016/04/27/线段树小姿势/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/04/27/线段树小姿势/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+
+          
+          
+
+          
+              &nbsp; | &nbsp;
+              <span class="page-pv"><i class="fa fa-file-o"></i>
+              <span class="busuanzi-value" id="busuanzi_value_page_pv" ></span>
+              </span>
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <hr>
+<p>title: 线段树小姿势<br>date: 2016-04-27 00:27:42<br>categories: </p>
+<ul>
+<li>LCY</li>
+<li></li>
+<li>tags: </li>
+<li>线段树</li>
+</ul>
+<p><del>Updating</del></p>
+<h1 id="区间合并"><a href="#区间合并" class="headerlink" title="区间合并"></a><strong>区间合并</strong></h1><h2 id="SPOJ-GSS1"><a href="#SPOJ-GSS1" class="headerlink" title="SPOJ GSS1"></a><strong>SPOJ GSS1</strong></h2><h2 id="题意"><a href="#题意" class="headerlink" title="题意"></a>题意</h2><ul>
+<li>给一个$n$长度的序列,$A[1]…A[n], ( |A[i]| ≤ 15007 , 1 ≤ N ≤ 50000 )$</li>
+<li>$M$个询问 询问区间内最大连续和</li>
+</ul>
+<p>##题解</p>
+<ul>
+<li>线段树每个节点维护$Lmax,Rmax,maxx,sum$</li>
+<li>$Lmax$表示从左端点开始的最大连续和 $Rmax$同理 $maxx$不受端点限制 $sum$表示这节点上的总和</li>
+<li>转移详见代码</li>
+</ul>
+<a id="more"></a>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">pragma</span> comment(linker, <span class="string">"/STACK:102400000,102400000"</span>)</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;cstdio&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;cstdlib&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;cstring&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;cctype&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;algorithm&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;queue&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;set&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;map&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;stack&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> LL long long</span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"><span class="keyword">const</span> <span class="keyword">int</span> M = <span class="number">1e5</span> + <span class="number">5</span>, INF = <span class="number">0x3f3f3f3f</span>, mod = <span class="number">1e9</span> + <span class="number">7</span>;</span><br><span class="line"><span class="keyword">struct</span> segment_tree &#123;</span><br><span class="line">    <span class="keyword">struct</span> node &#123;</span><br><span class="line">        LL Lmax, Rmax, maxx, sum;</span><br><span class="line">        <span class="keyword">int</span> L, R;</span><br><span class="line">    &#125; tree[M * <span class="number">4</span>];</span><br><span class="line">    <span class="function">node <span class="title">up</span><span class="params">(node a, node b)</span> </span>&#123;</span><br><span class="line">        node res;</span><br><span class="line">        res.L = a.L; res.R = b.R;</span><br><span class="line">        res.Lmax = max(a.Lmax, a.sum + b.Lmax);</span><br><span class="line">        res.Rmax = max(b.Rmax, b.sum + a.Rmax);</span><br><span class="line">        res.maxx = max(res.Lmax, res.Rmax);</span><br><span class="line">        res.maxx = max(max(a.maxx, b.maxx), a.Rmax + b.Lmax);</span><br><span class="line">        res.sum = a.sum + b.sum;</span><br><span class="line">        return res;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="function"><span class="keyword">void</span> <span class="title">build</span><span class="params">(<span class="keyword">int</span> x, <span class="keyword">int</span> y, <span class="keyword">int</span> p, <span class="keyword">int</span> *A)</span> </span>&#123;</span><br><span class="line">        tree[p].L = x; tree[p].R = y;</span><br><span class="line">        tree[p].Lmax = tree[p].Rmax = tree[p].maxx =<span class="number">-1e18</span>;</span><br><span class="line">        tree[p].sum=<span class="number">0</span>;</span><br><span class="line">        <span class="keyword">if</span>(x == y) &#123;</span><br><span class="line">            tree[p].Lmax = tree[p].Rmax = tree[p].maxx = tree[p].sum = A[x];</span><br><span class="line">            return;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">int</span> mid = (tree[p].L + tree[p].R) &gt;&gt; <span class="number">1</span>;</span><br><span class="line">        build(x, mid, p * <span class="number">2</span>, A);</span><br><span class="line">        build(mid + <span class="number">1</span>, y, p * <span class="number">2</span> + <span class="number">1</span>, A);</span><br><span class="line">        tree[p] = up(tree[p * <span class="number">2</span>], tree[p * <span class="number">2</span> + <span class="number">1</span>]);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="function">node <span class="title">query</span><span class="params">(<span class="keyword">int</span> x, <span class="keyword">int</span> y, <span class="keyword">int</span> p)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">if</span>(tree[p].L == x &amp;&amp; tree[p].R == y) return tree[p];</span><br><span class="line">        <span class="keyword">int</span> mid = (tree[p].L + tree[p].R) &gt;&gt; <span class="number">1</span>;</span><br><span class="line">        <span class="keyword">if</span>(y &lt;= mid) return query(x, y, p * <span class="number">2</span>);</span><br><span class="line">        <span class="keyword">else</span> <span class="keyword">if</span>(x &gt; mid) return query(x, y, p * <span class="number">2</span> + <span class="number">1</span>);</span><br><span class="line">        <span class="keyword">else</span> return up(query(x, mid, p * <span class="number">2</span>), query(mid + <span class="number">1</span>, y, p * <span class="number">2</span> + <span class="number">1</span>));</span><br><span class="line">    &#125;</span><br><span class="line">&#125; tree;</span><br><span class="line"><span class="keyword">int</span> A[M];</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    <span class="keyword">int</span> n;</span><br><span class="line">    <span class="keyword">while</span>(<span class="built_in">scanf</span>(<span class="string">"%d"</span>, &amp;n) != EOF) &#123;</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> j = <span class="number">1</span>; j &lt;= n; j++) <span class="built_in">scanf</span>(<span class="string">"%d"</span>, &amp;A[j]);</span><br><span class="line">        tree.build(<span class="number">1</span>, n, <span class="number">1</span>, A);</span><br><span class="line">        <span class="keyword">int</span> m;</span><br><span class="line">        <span class="built_in">scanf</span>(<span class="string">"%d"</span>, &amp;m);</span><br><span class="line">        <span class="keyword">while</span>(m--) &#123;</span><br><span class="line">            <span class="keyword">int</span> a, b;</span><br><span class="line">            <span class="built_in">scanf</span>(<span class="string">"%d%d"</span>, &amp;a, &amp;b);</span><br><span class="line">            <span class="built_in">printf</span>(<span class="string">"%d\n"</span>, tree.query(a, b, <span class="number">1</span>).maxx);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    return <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h2 id="HDU5316"><a href="#HDU5316" class="headerlink" title="HDU5316"></a><strong>HDU5316</strong></h2><h2 id="题意-1"><a href="#题意-1" class="headerlink" title="题意"></a>题意</h2><ul>
+<li>给一个$n(n&lt;=1e5)$长度的数列有两种操作</li>
+<li>$1$：修改一个点</li>
+<li>$2$：查询一个区间,查询一个最大子序列,子序列需满足下标奇偶交替,比方说$1,4,5,6$,或者$4,5,6$</li>
+</ul>
+<h2 id="题解"><a href="#题解" class="headerlink" title="题解"></a>题解</h2><p>奇偶交替的序列无非四种情况</p>
+<ul>
+<li>奇开头偶结尾</li>
+<li>奇开头奇结尾</li>
+<li>偶开头奇结尾</li>
+<li>偶开头偶结尾</li>
+</ul>
+<p>然后我就可以存这四个东西了，以$o$表示$odd$，$e$表示$even$<br>所以我取名就是$oo,ee,oe,eo$<br>转移详见代码</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">pragma</span> comment(linker, <span class="string">"/STACK:102400000,102400000"</span>)</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;cstdio&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;cstdlib&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;cstring&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;cctype&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;algorithm&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;queue&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;set&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;map&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;stack&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> LL long long</span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"><span class="keyword">const</span> <span class="keyword">int</span> M = <span class="number">1e5</span> + <span class="number">5</span>, INF = <span class="number">0x3f3f3f3f</span>, mod = <span class="number">1e9</span> + <span class="number">7</span>;</span><br><span class="line"><span class="keyword">struct</span> segment_tree &#123;</span><br><span class="line">    <span class="keyword">struct</span> node &#123;</span><br><span class="line">        <span class="comment">//o=odd,e=even</span></span><br><span class="line">        LL oe, eo, ee, oo;</span><br><span class="line">        <span class="keyword">int</span> L, R;</span><br><span class="line">    &#125; tree[M * <span class="number">4</span>];</span><br><span class="line">    <span class="function">node <span class="title">up</span><span class="params">(node a, node b)</span> </span>&#123;</span><br><span class="line">        node res;</span><br><span class="line">        res.L=a.L;res.R=b.R;</span><br><span class="line">        <span class="comment">//注意相接部分的奇偶性应该相反</span></span><br><span class="line">        res.oo = max(max(a.oo, b.oo), max(a.oo + b.eo, a.oe + b.oo)); </span><br><span class="line">        res.oe = max(max(a.oe, b.oe), max(a.oo + b.ee, a.oe + b.oe));</span><br><span class="line">        res.eo = max(max(a.eo, b.eo), max(a.eo + b.eo, a.ee + b.oo));</span><br><span class="line">        res.ee = max(max(a.ee, b.ee), max(a.ee + b.oe, a.eo + b.ee));</span><br><span class="line">        return res;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="function"><span class="keyword">void</span> <span class="title">build</span><span class="params">(<span class="keyword">int</span> x, <span class="keyword">int</span> y, <span class="keyword">int</span> p)</span> </span>&#123;</span><br><span class="line">        tree[p].L = x; tree[p].R = y;</span><br><span class="line">        tree[p].oe=tree[p].eo=tree[p].oo=tree[p].ee=<span class="number">-1e18</span>;</span><br><span class="line">        <span class="keyword">if</span>(x == y) return;</span><br><span class="line">        <span class="keyword">int</span> mid = (tree[p].L + tree[p].R) &gt;&gt; <span class="number">1</span>;</span><br><span class="line">        build(x, mid, p * <span class="number">2</span>);</span><br><span class="line">        build(mid + <span class="number">1</span>, y, p * <span class="number">2</span> + <span class="number">1</span>);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="function">node <span class="title">query</span><span class="params">(<span class="keyword">int</span> x, <span class="keyword">int</span> y, <span class="keyword">int</span> p)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">if</span>(tree[p].L == x &amp;&amp; tree[p].R == y) return tree[p];</span><br><span class="line">        <span class="keyword">int</span> mid = (tree[p].L + tree[p].R) &gt;&gt; <span class="number">1</span>;</span><br><span class="line">        <span class="keyword">if</span>(y &lt;= mid) return query(x, y, p * <span class="number">2</span>);</span><br><span class="line">        <span class="keyword">else</span> <span class="keyword">if</span>(x &gt; mid) return query(x, y, p * <span class="number">2</span> + <span class="number">1</span>);</span><br><span class="line">        <span class="keyword">else</span> return up(query(x, mid, p * <span class="number">2</span>), query(mid + <span class="number">1</span>, y, p * <span class="number">2</span> + <span class="number">1</span>));</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="function"><span class="keyword">void</span> <span class="title">update</span><span class="params">(<span class="keyword">int</span> x, <span class="keyword">int</span> y, <span class="keyword">int</span> p)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">if</span>(x == tree[p].L &amp;&amp; x == tree[p].R) &#123;</span><br><span class="line">            tree[p].oo = tree[p].ee = <span class="number">-1e18</span>;</span><br><span class="line">            <span class="keyword">if</span>(x % <span class="number">2</span>) tree[p].oo = y;</span><br><span class="line">            <span class="keyword">else</span> tree[p].ee = y;</span><br><span class="line">            return;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">int</span> mid = (tree[p].L + tree[p].R) &gt;&gt; <span class="number">1</span>;</span><br><span class="line">        <span class="keyword">if</span>(x &lt;= mid) update(x, y, p * <span class="number">2</span>);</span><br><span class="line">        <span class="keyword">else</span> update(x, y, p * <span class="number">2</span> + <span class="number">1</span>);</span><br><span class="line">        tree[p] = up(tree[p * <span class="number">2</span>], tree[p * <span class="number">2</span> + <span class="number">1</span>]);</span><br><span class="line">    &#125;</span><br><span class="line">&#125; tree;</span><br><span class="line"><span class="keyword">int</span> A[M];</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    <span class="keyword">int</span> T;</span><br><span class="line">    <span class="built_in">scanf</span>(<span class="string">"%d"</span>, &amp;T);</span><br><span class="line">    <span class="keyword">while</span>(T--) &#123;</span><br><span class="line">        <span class="keyword">int</span> n, m;</span><br><span class="line">        <span class="built_in">scanf</span>(<span class="string">"%d%d"</span>, &amp;n, &amp;m);</span><br><span class="line">        tree.build(<span class="number">1</span>, n, <span class="number">1</span>);</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> j = <span class="number">1</span>; j &lt;= n; j++) &#123;</span><br><span class="line">            <span class="built_in">scanf</span>(<span class="string">"%d"</span>, &amp;A[j]);</span><br><span class="line">            tree.update(j, A[j], <span class="number">1</span>);</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">while</span>(m--) &#123;</span><br><span class="line">            <span class="keyword">int</span> a, b, c;</span><br><span class="line">            <span class="built_in">scanf</span>(<span class="string">"%d%d%d"</span>, &amp;a, &amp;b, &amp;c);</span><br><span class="line">            <span class="keyword">if</span>(a == <span class="number">0</span>) &#123;</span><br><span class="line">                <span class="keyword">auto</span> t = tree.query(b, c, <span class="number">1</span>);</span><br><span class="line">                <span class="built_in">printf</span>(<span class="string">"%I64d\n"</span>, max(max(t.oo, t.ee), max(t.oe, t.eo)));</span><br><span class="line">            &#125; <span class="keyword">else</span> tree.update(b, c, <span class="number">1</span>);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    return <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h2 id="标记合并"><a href="#标记合并" class="headerlink" title="标记合并"></a><strong>标记合并</strong></h2><h2 id="uva11402"><a href="#uva11402" class="headerlink" title="uva11402"></a><strong>uva11402</strong></h2><h2 id="题意-2"><a href="#题意-2" class="headerlink" title="题意"></a>题意</h2><ul>
+<li>给一个01串，每次有四种操作:</li>
+<li>1:把区间置1</li>
+<li>2:把区间置0</li>
+<li>3:区间内的01翻转</li>
+<li>4:查询区间1的个数</li>
+</ul>
+<h2 id="题解-1"><a href="#题解-1" class="headerlink" title="题解"></a>题解</h2><p><a href="http://taosama.github.io/2016/03/28/UVA%2011402%20Ahoy,%20Pirates!%EF%BC%88%E7%BA%BF%E6%AE%B5%E6%A0%91%E6%A0%87%E8%AE%B0%E5%90%88%E5%B9%B6%EF%BC%89/" target="_blank" rel="external">T神博客</a></p>
+<p>##我的代码</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">pragma</span> comment(linker, <span class="string">"/STACK:102400000,102400000"</span>)</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;cstdio&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;cstdlib&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;cstring&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;cctype&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;algorithm&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;queue&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;set&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;map&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;stack&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> LL long long</span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"><span class="keyword">const</span> <span class="keyword">int</span> M = <span class="number">2e6</span> + <span class="number">5</span>, INF = <span class="number">0x3f3f3f3f</span>, mod = <span class="number">1e9</span> + <span class="number">7</span>;</span><br><span class="line"><span class="keyword">struct</span> segment_tree &#123;</span><br><span class="line">    <span class="keyword">struct</span> node &#123;</span><br><span class="line">        <span class="keyword">int</span> L, R, tag, sum;</span><br><span class="line">    &#125; tree[M * <span class="number">4</span>];</span><br><span class="line">    <span class="function"><span class="keyword">void</span> <span class="title">up</span><span class="params">(<span class="keyword">int</span> p)</span> </span>&#123;</span><br><span class="line">        node &amp;lson = tree[p * <span class="number">2</span>], &amp;rson = tree[p * <span class="number">2</span> + <span class="number">1</span>];</span><br><span class="line">        tree[p].sum = lson.sum + rson.sum;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="function"><span class="keyword">void</span> <span class="title">get</span><span class="params">(node&amp; a, <span class="keyword">int</span> tag)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">if</span>(tag == <span class="number">1</span>) a.sum = a.R - a.L + <span class="number">1</span>;</span><br><span class="line">        <span class="keyword">if</span>(tag == <span class="number">2</span>) a.sum = <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">if</span>(tag == <span class="number">3</span>) a.sum = a.R - a.L + <span class="number">1</span> - a.sum;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="function"><span class="keyword">void</span> <span class="title">combinetag</span><span class="params">(<span class="keyword">int</span> a, <span class="keyword">int</span> &amp;b)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">int</span> flag = <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">if</span>(a == <span class="number">1</span>) b = <span class="number">1</span>;</span><br><span class="line">        <span class="keyword">if</span>(a == <span class="number">2</span>) b = <span class="number">2</span>;</span><br><span class="line">        <span class="keyword">if</span>(a == <span class="number">3</span>) &#123;</span><br><span class="line">            <span class="keyword">if</span>(b == <span class="number">0</span>) b = <span class="number">3</span>;</span><br><span class="line">            <span class="keyword">else</span> <span class="keyword">if</span>(b == <span class="number">3</span>) b = <span class="number">0</span>;</span><br><span class="line">            <span class="keyword">else</span> <span class="keyword">if</span>(b == <span class="number">1</span>) b = <span class="number">2</span>;</span><br><span class="line">            <span class="keyword">else</span> b = <span class="number">1</span>;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="function"><span class="keyword">void</span> <span class="title">down</span><span class="params">(<span class="keyword">int</span> p)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">if</span>(!tree[p].tag) return;</span><br><span class="line">        <span class="keyword">int</span> &amp;tag = tree[p].tag;</span><br><span class="line">        node&amp; lson = tree[p * <span class="number">2</span>], &amp;rson = tree[p * <span class="number">2</span> + <span class="number">1</span>];</span><br><span class="line">        get(lson, tag);</span><br><span class="line">        get(rson, tag);</span><br><span class="line">        combinetag(tag, lson.tag);</span><br><span class="line">        combinetag(tag, rson.tag);</span><br><span class="line">        tag = <span class="number">0</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="function"><span class="keyword">void</span> <span class="title">build</span><span class="params">(<span class="keyword">int</span> x, <span class="keyword">int</span> y, <span class="keyword">int</span> p, <span class="built_in">string</span> &amp;s)</span> </span>&#123;</span><br><span class="line">        tree[p].L = x; tree[p].R = y; tree[p].tag = tree[p].sum = <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">if</span>(x == y) &#123;</span><br><span class="line">            tree[p].sum = s[x - <span class="number">1</span>] - <span class="string">'0'</span>;</span><br><span class="line">            return;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">int</span> mid = (tree[p].L + tree[p].R) &gt;&gt; <span class="number">1</span>;</span><br><span class="line">        build(x, mid, p * <span class="number">2</span>, s);</span><br><span class="line">        build(mid + <span class="number">1</span>, y, p * <span class="number">2</span> + <span class="number">1</span>, s);</span><br><span class="line">        up(p);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="function"><span class="keyword">int</span> <span class="title">query</span><span class="params">(<span class="keyword">int</span> x, <span class="keyword">int</span> y, <span class="keyword">int</span> p)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">if</span>(tree[p].L == x &amp;&amp; tree[p].R == y) return tree[p].sum;</span><br><span class="line">        down(p);</span><br><span class="line">        <span class="keyword">int</span> mid = (tree[p].L + tree[p].R) &gt;&gt; <span class="number">1</span>;</span><br><span class="line">        <span class="keyword">int</span> res;</span><br><span class="line">        <span class="keyword">if</span>(y &lt;= mid) res = query(x, y, p * <span class="number">2</span>);</span><br><span class="line">        <span class="keyword">else</span> <span class="keyword">if</span>(x &gt; mid) res = query(x, y, p * <span class="number">2</span> + <span class="number">1</span>);</span><br><span class="line">        <span class="keyword">else</span> res = query(x, mid, p * <span class="number">2</span>) + query(mid + <span class="number">1</span>, y, p * <span class="number">2</span> + <span class="number">1</span>);</span><br><span class="line">        up(p);</span><br><span class="line">        return res;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="function"><span class="keyword">void</span> <span class="title">update</span><span class="params">(<span class="keyword">int</span> x, <span class="keyword">int</span> y, <span class="keyword">int</span> z, <span class="keyword">int</span> p)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">if</span>(x == tree[p].L &amp;&amp; y == tree[p].R) &#123;</span><br><span class="line">            get(tree[p], z);</span><br><span class="line">            combinetag(z, tree[p].tag);</span><br><span class="line">            return;</span><br><span class="line">        &#125;</span><br><span class="line">        down(p);</span><br><span class="line">        <span class="keyword">int</span> mid = (tree[p].L + tree[p].R) &gt;&gt; <span class="number">1</span>;</span><br><span class="line">        <span class="keyword">if</span>(y &lt;= mid) update(x, y, z, p * <span class="number">2</span>);</span><br><span class="line">        <span class="keyword">else</span> <span class="keyword">if</span>(x &gt; mid) update(x, y, z, p * <span class="number">2</span> + <span class="number">1</span>);</span><br><span class="line">        <span class="keyword">else</span> update(x, mid, z, p * <span class="number">2</span>), update(mid + <span class="number">1</span>, y, z, p * <span class="number">2</span> + <span class="number">1</span>);</span><br><span class="line">        up(p);</span><br><span class="line">    &#125;</span><br><span class="line">&#125; tree;</span><br><span class="line"><span class="keyword">int</span> A[M];</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    <span class="keyword">int</span> T, cas = <span class="number">1</span>;</span><br><span class="line">    <span class="built_in">scanf</span>(<span class="string">"%d"</span>, &amp;T);</span><br><span class="line">    <span class="keyword">while</span>(T--) &#123;</span><br><span class="line">        <span class="keyword">int</span> n;</span><br><span class="line">        <span class="built_in">scanf</span>(<span class="string">"%d"</span>, &amp;n);</span><br><span class="line">        <span class="built_in">string</span> str;</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> j = <span class="number">1</span>; j &lt;= n; j++) &#123;</span><br><span class="line">            <span class="built_in">string</span> s;</span><br><span class="line">            <span class="keyword">int</span> a;</span><br><span class="line">            <span class="built_in">scanf</span>(<span class="string">"%d"</span>, &amp;a); <span class="built_in">cin</span> &gt;&gt; s;</span><br><span class="line">            <span class="keyword">while</span>(a--) str += s;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">int</span> m = str.size();</span><br><span class="line">        tree.build(<span class="number">1</span>, m, <span class="number">1</span>, str);</span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">"Case %d:\n"</span>, cas++);</span><br><span class="line">        <span class="keyword">int</span> q, Q = <span class="number">1</span>;</span><br><span class="line">        <span class="built_in">scanf</span>(<span class="string">"%d"</span>, &amp;q);</span><br><span class="line">        <span class="keyword">while</span>(q--) &#123;</span><br><span class="line">            <span class="keyword">char</span> s[<span class="number">2</span>];</span><br><span class="line">            <span class="keyword">int</span> a, b;</span><br><span class="line">            <span class="built_in">scanf</span>(<span class="string">"%s%d%d"</span>, s, &amp;a, &amp;b);</span><br><span class="line">            <span class="keyword">if</span>(s[<span class="number">0</span>] == <span class="string">'F'</span>) tree.update(a + <span class="number">1</span>, b + <span class="number">1</span>, <span class="number">1</span>, <span class="number">1</span>);</span><br><span class="line">            <span class="keyword">if</span>(s[<span class="number">0</span>] == <span class="string">'E'</span>) tree.update(a + <span class="number">1</span>, b + <span class="number">1</span>, <span class="number">2</span>, <span class="number">1</span>);</span><br><span class="line">            <span class="keyword">if</span>(s[<span class="number">0</span>] == <span class="string">'I'</span>) tree.update(a + <span class="number">1</span>, b + <span class="number">1</span>, <span class="number">3</span>, <span class="number">1</span>);</span><br><span class="line">            <span class="keyword">if</span>(s[<span class="number">0</span>] == <span class="string">'S'</span>) <span class="built_in">printf</span>(<span class="string">"Q%d: %d\n"</span>, Q++, tree.query(a + <span class="number">1</span>, b + <span class="number">1</span>, <span class="number">1</span>));</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    return <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>对线段树高级姿势有兴趣的同学 </p>
+<p><a href="http://pan.baidu.com/s/1o7xSSQ2" target="_blank" rel="external">戳这里</a></p>
+<p><del>LCY表示太弱看不懂 有菊苣看懂了教教我</del> </p>
+
+      
+    </div>
+    
+    <div>
+      
+        
+      
+    </div>
+
+    <div>
+      
+        
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/blog/2016/04/22/2016年重庆大学ACM-ICPC暑假前集训计划及暑假集训队选拔方案/" rel="next" title="2016年重庆大学ACM-ICPC暑假前集训计划及暑假集训队选拔方案">
+                <i class="fa fa-chevron-left"></i> 2016年重庆大学ACM-ICPC暑假前集训计划及暑假集训队选拔方案
+              </a>
+            
+          </div>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+  <div class="comments" id="comments">
+    
+      <div class="ds-thread" data-thread-key="2016/04/27/线段树小姿势/"
+           data-title="" data-url="http://cqu-acm.github.io/blog/blog/2016/04/27/线段树小姿势/">
+      </div>
+    
+  </div>
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview sidebar-panel ">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" itemprop="image"
+               src="/logo.png"
+               alt="CQU-ACMers" />
+          <p class="site-author-name" itemprop="name">CQU-ACMers</p>
+          <p class="site-description motion-element" itemprop="description">重庆大学集训队每周一题</p>
+        </div>
+        <nav class="site-state motion-element">
+          <div class="site-state-item site-state-posts">
+            <a href="/blog/archives">
+              <span class="site-state-item-count">4</span>
+              <span class="site-state-item-name">日志</span>
+            </a>
+          </div>
+
+          
+            <div class="site-state-item site-state-categories">
+              <a href="/blog/categories">
+                <span class="site-state-item-count">2</span>
+                <span class="site-state-item-name">分类</span>
+              </a>
+            </div>
+          
+
+          
+            <div class="site-state-item site-state-tags">
+              <a href="/blog/tags">
+                <span class="site-state-item-count">3</span>
+                <span class="site-state-item-name">标签</span>
+              </a>
+            </div>
+          
+
+        </nav>
+
+        
+          <div class="feed-link motion-element">
+            <a href="/blog/atom.xml" rel="alternate">
+              <i class="fa fa-rss"></i>
+              RSS
+            </a>
+          </div>
+        
+
+        <div class="links-of-author motion-element">
+          
+            
+              <span class="links-of-author-item">
+                <a href="http://taosama.github.io/" target="_blank" title="TaoSama's blog">
+                  
+                    <i class="fa fa-globe"></i>
+                  
+                  TaoSama's blog
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="http://www.ctzsm.com" target="_blank" title="ctzsm's blog">
+                  
+                    <i class="fa fa-globe"></i>
+                  
+                  ctzsm's blog
+                </a>
+              </span>
+            
+          
+        </div>
+
+        
+        
+
+        
+        
+
+      </section>
+
+      
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+            
+              
+            
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#区间合并"><span class="nav-number">1.</span> <span class="nav-text">区间合并</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#SPOJ-GSS1"><span class="nav-number">1.1.</span> <span class="nav-text">SPOJ GSS1</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#题意"><span class="nav-number">1.2.</span> <span class="nav-text">题意</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#HDU5316"><span class="nav-number">1.3.</span> <span class="nav-text">HDU5316</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#题意-1"><span class="nav-number">1.4.</span> <span class="nav-text">题意</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#题解"><span class="nav-number">1.5.</span> <span class="nav-text">题解</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#标记合并"><span class="nav-number">1.6.</span> <span class="nav-text">标记合并</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#uva11402"><span class="nav-number">1.7.</span> <span class="nav-text">uva11402</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#题意-2"><span class="nav-number">1.8.</span> <span class="nav-text">题意</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#题解-1"><span class="nav-number">1.9.</span> <span class="nav-text">题解</span></a></li></ol></li></ol></div>
+            
+          </div>
+        </section>
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
+  
+  &copy; 
+  <span itemprop="copyrightYear">2016</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">
+  <a href = "https://github.com/CQU-ACM/cqu-acm.github.io" target="_blank"> CQU-ACMers </a>
+  </span>
+</div>
+
+<div class="powered-by">
+  由 <a class="theme-link" href="http://hexo.io" target="_blank">Hexo</a> 强力驱动
+</div>
+
+<div class="theme-info">
+  主题 -
+  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next" target="_blank">
+    NexT.Mist
+  </a>
+</div>
+        
+
+<div class="busuanzi-count">
+
+  <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+  
+    <span class="site-uv"><i class="fa fa-user"></i><span class="busuanzi-value" id="busuanzi_value_site_uv"></span></span>
+  
+
+  
+    <span class="site-pv"><i class="fa fa-eye"></i><span class="busuanzi-value" id="busuanzi_value_site_pv"></span></span>
+  
+  
+</div>
+
+
+
+        
+      </div>
+    </footer>
+
+    <div class="back-to-top">
+      <i class="fa fa-arrow-up"></i>
+    </div>
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  <script type="text/javascript" src="/blog/vendors/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script type="text/javascript" src="/blog/vendors/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  <script type="text/javascript" src="/blog/vendors/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  <script type="text/javascript" src="/blog/vendors/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/blog/vendors/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/blog/vendors/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/blog/js/src/utils.js?v=5.0.1"></script>
+
+  <script type="text/javascript" src="/blog/js/src/motion.js?v=5.0.1"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/blog/js/src/scrollspy.js?v=5.0.1"></script>
+<script type="text/javascript" src="/blog/js/src/post-details.js?v=5.0.1"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/blog/js/src/bootstrap.js?v=5.0.1"></script>
+
+
+
+  
+
+  
+    
+  
+
+  <script type="text/javascript">
+    var duoshuoQuery = {short_name:"Taos"};
+    (function() {
+      var ds = document.createElement('script');
+      ds.type = 'text/javascript';ds.async = true;
+      ds.id = 'duoshuo-script';
+      ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+      ds.charset = 'UTF-8';
+      (document.getElementsByTagName('head')[0]
+      || document.getElementsByTagName('body')[0]).appendChild(ds);
+    })();
+  </script>
+
+  
+    
+      
+      <script src="/blog/vendors/ua-parser-js/dist/ua-parser.min.js?v=0.7.9"></script>
+      <script src="/blog/js/src/hook-duoshuo.js"></script>
+    
+  
+
+
+
+
+
+  
+  
+  
+  <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+        processEscapes: true,
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      }
+    });
+  </script>
+
+  <script type="text/x-mathjax-config">
+    MathJax.Hub.Queue(function() {
+      var all = MathJax.Hub.getAllJax(), i;
+      for (i=0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';
+      }
+    });
+  </script>
+  <script type="text/javascript" src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+
+  
+
+  
+
+</body>
+</html>
