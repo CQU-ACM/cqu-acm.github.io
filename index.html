@@ -251,6 +251,136 @@
             
               
                 
+                <a class="post-title-link" href="/blog/2016/04/27/mcpc/" itemprop="url">
+                  MCPC 2016
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2016-04-27T11:48:00+08:00" content="2016-04-27">
+              2016-04-27
+            </time>
+          </span>
+
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp;
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/blog/categories/contest/" itemprop="url" rel="index">
+                    <span itemprop="name">contest</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/blog/2016/04/27/mcpc/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/04/27/mcpc/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+
+          
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p><a href="">@晴川大爷</a> 说要带我飞，我们去打一个澳洲大学的校赛，虐虐大雪参，轻松AK轻松夺冠辣（flag)，于是我们果然轻松狗带辣。T_T。</p>
+<p>这个比赛一共有六个水题，题目在<a href="http://monashicpc.com/anzac/rounds/mcpc/mcpc2016_problems.pdf" target="_blank" rel="external">这里</a>。</p>
+<p>赛中晴川大爷强行拿了全场一血，然后我们就开始了持续懵逼之路。</p>
+<h3 id="A"><a href="#A" class="headerlink" title="A"></a>A</h3><p>这是一个水题，判一下<code>(i &amp; 1) ^ (j &amp; 1)</code>不过有个trick容易wrong answer。</p>
+<h3 id="B"><a href="#B" class="headerlink" title="B"></a>B</h3><p>这是一个模拟题。</p>
+<h3 id="C"><a href="#C" class="headerlink" title="C"></a>C</h3><p>这题是一个约瑟夫变种，因为$k$不大，所以可以直接快速模拟。</p>
+<h3 id="D"><a href="#D" class="headerlink" title="D"></a>D</h3><p>题目大意就是给一个100,000边5000点的无向图，两个人分别从两个起点$u, v$出发到一个地方$c$<br>第一个人单独走速度是$1$秒一条边，第二个人单独走速度是5秒一条边，两人相遇之后一起走是2秒一条边，求最少时间。<br>那么这个就是分别以$u, v, c$为起点跑一次单源点最短路，枚举一下相遇点就好了。</p>
+<h3 id="E"><a href="#E" class="headerlink" title="E"></a>E</h3><p>这题验证一个<code>8e18</code>范围内的数字是不是<code>square free</code>的。<br>我们知道这个数如果有两个相同因子，那么一定有两个相同的素因子；<br>而且容易知道如果这个素因子超过<code>2e6</code>，那么另一部分必然小于<code>2e6</code>。<br>所以我们枚举<code>2e6</code>以内的素因子，并判断一下是不是所有的素因子都只有一个。<br>剩下的部分再判断一下是不是完全平方数就可以了。</p>
+<h3 id="F"><a href="#F" class="headerlink" title="F"></a>F</h3><p>就是对机器做无限背包，对人做01背包。因为要输出一个可行解，同时还有一些其他小细节，这个题不怎么好写。</p>
+<p>赛中只做出来前五题，赛后补了一下F，感觉码力太弱了。T_T。</p>
+<p>我的B、C、E、F的<a href="https://github.com/ctzsm/Tsunemori-Akane/tree/master/Contests/Monash%20Collegiate%20Programming%20Contest" target="_blank" rel="external">代码</a></p>
+
+          
+        
+      
+    </div>
+    
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
                 <a class="post-title-link" href="/blog/2016/04/27/线段树小姿势/" itemprop="url">
                   线段树小姿势
                 </a>
@@ -770,7 +900,7 @@
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/blog/archives">
-              <span class="site-state-item-count">4</span>
+              <span class="site-state-item-count">5</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
@@ -778,7 +908,7 @@
           
             <div class="site-state-item site-state-categories">
               <a href="/blog/categories">
-                <span class="site-state-item-count">3</span>
+                <span class="site-state-item-count">4</span>
                 <span class="site-state-item-name">分类</span>
               </a>
             </div>
