@@ -5,7 +5,7 @@
   <link href="/blog/atom.xml" rel="self"/>
   
   <link href="http://cqu-acm.github.io/blog/"/>
-  <updated>2016-04-28T17:32:28.063Z</updated>
+  <updated>2016-05-04T10:02:23.502Z</updated>
   <id>http://cqu-acm.github.io/blog/</id>
   
   <author>
@@ -14,6 +14,73 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>关于解题报告格式以及提交办法</title>
+    <link href="http://cqu-acm.github.io/blog/2016/05/04/%E5%85%B3%E4%BA%8E%E8%A7%A3%E9%A2%98%E6%8A%A5%E5%91%8A%E6%A0%BC%E5%BC%8F%E4%BB%A5%E5%8F%8A%E6%8F%90%E4%BA%A4%E5%8A%9E%E6%B3%95/"/>
+    <id>http://cqu-acm.github.io/blog/2016/05/04/关于解题报告格式以及提交办法/</id>
+    <published>2016-05-04T09:28:42.000Z</published>
+    <updated>2016-05-04T10:02:23.502Z</updated>
+    
+    <content type="html">&lt;ul&gt;
+&lt;li&gt;&lt;font color=&quot;red&quot;&gt; 最后一次说明，把Nick都改成真实姓名并且是中文，没人愿意去拼你的拼音&lt;br&gt;减轻一下统计人员的工作量，能换位思考一下好么&lt;/font&gt;&lt;/li&gt;
+&lt;li&gt;&lt;font color=&quot;red&quot;&gt;如若不更改，非中文姓名Nick的ID的做题记录将被忽略&lt;/font&gt;&lt;/li&gt;
+&lt;li&gt;&lt;font color=&quot;red&quot;&gt;请仔细阅读解题报告提交说明，有任何错误，本专题将被记0分&lt;/font&gt;
+
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
+&lt;h1 id=&quot;解题报告格式&quot;&gt;&lt;a href=&quot;#解题报告格式&quot; class=&quot;headerlink&quot; title=&quot;解题报告格式&quot;&gt;&lt;/a&gt;解题报告格式&lt;/h1&gt;&lt;h2 id=&quot;raw-md文本&quot;&gt;&lt;a href=&quot;#raw-md文本&quot; class=&quot;headerlink&quot; title=&quot;raw md文本&quot;&gt;&lt;/a&gt;raw md文本&lt;/h2&gt;&lt;figure class=&quot;highlight cpp&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;15&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;meta&quot;&gt;### A. 01的时间&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;meta&quot;&gt;#### 题意&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;简单描述一下题目大意，以及题目数据范围&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;meta&quot;&gt;#### 分析&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;number&quot;&gt;1.&lt;/span&gt; 怎么想&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;number&quot;&gt;2.&lt;/span&gt; 怎么错&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;meta&quot;&gt;#### 思考&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;number&quot;&gt;3.&lt;/span&gt; 坑&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;number&quot;&gt;4.&lt;/span&gt; 技巧&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;h2 id=&quot;rendered文本&quot;&gt;&lt;a href=&quot;#rendered文本&quot; class=&quot;headerlink&quot; title=&quot;rendered文本&quot;&gt;&lt;/a&gt;rendered文本&lt;/h2&gt;&lt;h3 id=&quot;A-01的时间&quot;&gt;&lt;a href=&quot;#A-01的时间&quot; class=&quot;headerlink&quot; title=&quot;A. 01的时间&quot;&gt;&lt;/a&gt;A. 01的时间&lt;/h3&gt;&lt;h4 id=&quot;题意&quot;&gt;&lt;a href=&quot;#题意&quot; class=&quot;headerlink&quot; title=&quot;题意&quot;&gt;&lt;/a&gt;题意&lt;/h4&gt;&lt;p&gt;简单描述一下题目大意，以及题目数据范围&lt;/p&gt;
+&lt;h4 id=&quot;分析&quot;&gt;&lt;a href=&quot;#分析&quot; class=&quot;headerlink&quot; title=&quot;分析&quot;&gt;&lt;/a&gt;分析&lt;/h4&gt;&lt;ol&gt;
+&lt;li&gt;怎么想&lt;/li&gt;
+&lt;li&gt;怎么错&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h4 id=&quot;思考&quot;&gt;&lt;a href=&quot;#思考&quot; class=&quot;headerlink&quot; title=&quot;思考&quot;&gt;&lt;/a&gt;思考&lt;/h4&gt;&lt;ol&gt;
+&lt;li&gt;坑&lt;/li&gt;
+&lt;li&gt;技巧&lt;/li&gt;
+&lt;/ol&gt;
+&lt;hr&gt;
+&lt;h2 id=&quot;写作方法&quot;&gt;&lt;a href=&quot;#写作方法&quot; class=&quot;headerlink&quot; title=&quot;写作方法&quot;&gt;&lt;/a&gt;写作方法&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;使用在线的md编辑器，&lt;a href=&quot;https://www.zybuluo.com/mdeditor&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;作业部落&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;编写完成后，在右上角的&lt;code&gt;设置&lt;/code&gt;里，选择&lt;code&gt;导出Html&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;使用Chrome打开Html文件，使用&lt;code&gt;快捷键Ctrl+P&lt;/code&gt;打印Html页面成pdf，默认设置即可&lt;/li&gt;
+&lt;li&gt;Alternative：使用自己的md编辑器导出pdf&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;说明&quot;&gt;&lt;a href=&quot;#说明&quot; class=&quot;headerlink&quot; title=&quot;说明&quot;&gt;&lt;/a&gt;说明&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;所有题目的解题报告写在一起，整体一个pdf&lt;/li&gt;
+&lt;li&gt;不会的题，可以学习后解决，不要求所有人都ak&lt;/li&gt;
+&lt;li&gt;不是这个题过了就有分的，同时还要参考这个题的解题报告的内容&lt;/li&gt;
+&lt;li&gt;关于排版，可以自行按照审美更改，整体框架需要维持不变&lt;/li&gt;
+&lt;li&gt;代码作为附件提交&lt;/li&gt;
+&lt;li&gt;最终提交为一个你的&lt;code&gt;中文姓名目录&lt;/code&gt;，目录下一个&lt;code&gt;解题报告.pdf&lt;/code&gt;，以及&lt;code&gt;src&lt;/code&gt;目录里的所有oj上显示ac的最终代码，并打成zip包&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;提交目录结构&quot;&gt;&lt;a href=&quot;#提交目录结构&quot; class=&quot;headerlink&quot; title=&quot;提交目录结构&quot;&gt;&lt;/a&gt;提交目录结构&lt;/h2&gt;&lt;figure class=&quot;highlight cpp&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;--- 你的姓名&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    --- 解题报告.pdf&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    --- src&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        --- A.cpp&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        --- B.cpp&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        ...&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;h2 id=&quot;图片演示&quot;&gt;&lt;a href=&quot;#图片演示&quot; class=&quot;headerlink&quot; title=&quot;图片演示&quot;&gt;&lt;/a&gt;图片演示&lt;/h2&gt;&lt;p&gt;&lt;img src=&quot;http://7xru22.com1.z0.glb.clouddn.com/16-5-4/81743639.jpg&quot; alt=&quot;&quot;&gt;&lt;br&gt;&lt;img src=&quot;http://7xru22.com1.z0.glb.clouddn.com/16-5-4/93368252.jpg&quot; alt=&quot;&quot;&gt;&lt;br&gt;&lt;img src=&quot;http://7xru22.com1.z0.glb.clouddn.com/16-5-4/35718216.jpg&quot; alt=&quot;&quot;&gt;&lt;br&gt;&lt;img src=&quot;http://7xru22.com1.z0.glb.clouddn.com/16-5-4/81784616.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;h1 id=&quot;解题报告提交地址&quot;&gt;&lt;a href=&quot;#解题报告提交地址&quot; class=&quot;headerlink&quot; title=&quot;解题报告提交地址&quot;&gt;&lt;/a&gt;解题报告提交地址&lt;/h1&gt;&lt;ul&gt;
+&lt;li&gt;发送地址&lt;br&gt;请将&lt;code&gt;你的姓名.zip&lt;/code&gt;文件发送至邮箱&lt;code&gt;lwt_36@163.com&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;发送时间&lt;br&gt;ddl是每个专题的下一个专题开始的前一天的&lt;code&gt;17：00&lt;/code&gt;&lt;br&gt;比如：第一个专题的解题报告ddl为&lt;code&gt;5.11 17:00&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;ul&gt;
+&lt;li&gt;&lt;font color = red&gt; 最后一次说明，把Nick都改成真实姓名并且是中文，没人愿意去拼你的拼音&lt;br&gt;减轻一下统计人员的工作量，能换位思考一下好么&lt;/font&gt;&lt;/li&gt;
+&lt;li&gt;&lt;font color = red&gt;如若不更改，非中文姓名Nick的ID的做题记录将被忽略&lt;/font&gt;&lt;/li&gt;
+&lt;li&gt;&lt;font color = red&gt;请仔细阅读解题报告提交说明，有任何错误，本专题将被记0分&lt;/font&gt;
+
+&lt;/li&gt;
+&lt;/ul&gt;
+    
+    </summary>
+    
+      <category term="Anouncement" scheme="http://cqu-acm.github.io/blog/categories/Anouncement/"/>
+    
+    
+      <category term="2016" scheme="http://cqu-acm.github.io/blog/tags/2016/"/>
+    
+  </entry>
   
   <entry>
     <title>MCPC 2016</title>
