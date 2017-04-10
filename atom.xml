@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>CQU-ACMers</title>
   <subtitle>Monthly Problem</subtitle>
-  <link href="/blog/atom.xml" rel="self"/>
+  <link href="/atom.xml" rel="self"/>
   
   <link href="http://cqu-acm.github.io/blog/"/>
   <updated>2016-10-08T11:18:35.603Z</updated>
